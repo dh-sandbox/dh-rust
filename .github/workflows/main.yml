@@ -1,7 +1,10 @@
-name: Main
+name: Rust
+
 on:
   push:
-    branches: [ main ]
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
 
 permissions:
   actions: write
