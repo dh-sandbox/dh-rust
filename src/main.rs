@@ -18,6 +18,13 @@ fn main() {
     println!("4 * 3 = {}", multiply(4, 3));
 }
 
+fn mainish() {
+    println!("Hello, again!");
+
+    println!("3 + 2 = {}", add(3, 2));
+    println!("5 - 3 = {}", subtract(5, 3));
+    println!("4 * 3 = {}", multiply(4, 3));
+}
 #[cfg(test)]
 mod tests {
     use super::*;
