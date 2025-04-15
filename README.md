@@ -35,6 +35,28 @@ Join the our [Slack Community](https://example.com) for help and to provide feed
 
 
 
+## Help and feedback
+
+Join the our [Slack Community](https://example.com) for help and to provide feedback that we'll use to improve Qlty.
+            
+## License
+
+[MIT License](./LICENSE.md)
+
+## Help and feedback
+
+Join the our [Slack Community](https://example.com) for help and to provide feedback that we'll use to improve Qlty.
+            
+## License
+
+[MIT License](./LICENSE.md)
+
+
+
+
+
+
+
 
 
 
