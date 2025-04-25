@@ -12,9 +12,6 @@ name = "checkov"
 version = "3.2.49"
 
 [[plugin]]
-name = "clippy"
-
-[[plugin]]
 name = "markdownlint"
 version = "0.31.1"
 
@@ -30,9 +27,6 @@ name = "ripgrep"
 
 [[plugin]]
 name = "trivy"
-
-[[plugin]]
-name = "trufflehog"
 
 [[plugin]]
 name = "yamllint"
