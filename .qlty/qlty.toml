@@ -2,8 +2,7 @@ config_version = "0"
 
 [[source]]
 name = "default"
-repository = "https://github.com/qltysh/qlty.git"
-tag = "v0.447.0"
+default = true
 
 [[plugin]]
 name = "actionlint"
@@ -11,9 +10,6 @@ name = "actionlint"
 [[plugin]]
 name = "checkov"
 version = "3.2.49"
-
-[[plugin]]
-name = "clippy"
 
 [[plugin]]
 name = "markdownlint"
@@ -31,9 +27,6 @@ name = "ripgrep"
 
 [[plugin]]
 name = "trivy"
-
-[[plugin]]
-name = "trufflehog"
 
 [[plugin]]
 name = "yamllint"
