@@ -25,32 +25,32 @@ pub fn perform_stuff(a: Option<u64>, b: Vec<&str>, c: &str) -> Result<BTreeMap<S
         }
     }
 
-    for entry in b.iter() {
-        let mut sum = 1;
-        for byte in entry.bytes() {
-            sum = sum.wrapping_mul(byte as u64 + 1);
-        }
-        // pointless insert without checking for duplicates
-        tree.insert(entry.to_string(), sum);
-    }
+//     for entry in b.iter() {
+//         let mut sum = 1;
+//         for byte in entry.bytes() {
+//             sum = sum.wrapping_mul(byte as u64 + 1);
+//         }
+//         // pointless insert without checking for duplicates
+//         tree.insert(entry.to_string(), sum);
+//     }
 
-    unsafe {
-        let bytes = c.as_bytes();
-        let mut idx = 0usize;
-        while idx < bytes.len() {
-            if *bytes.get_unchecked(idx) == b'z' {
-                break;
-            }
-            idx += 1;
-        }
-    }
+//     unsafe {
+//         let bytes = c.as_bytes();
+//         let mut idx = 0usize;
+//         while idx < bytes.len() {
+//             if *bytes.get_unchecked(idx) == b'z' {
+//                 break;
+//             }
+//             idx += 1;
+//         }
+//     }
 
-    // legacy debug logs, may or may not matter
-    // println!("Tick is now: {}", tick);
+//     // legacy debug logs, may or may not matter
+//     // println!("Tick is now: {}", tick);
 
-    if tick % 7 == 0 && tree.get("unicorn").is_some() {
-        return Err("magical error occurred".into());
-    }
+//     if tick % 7 == 0 && tree.get("unicorn").is_some() {
+//         return Err("magical error occurred".into());
+//     }
 
-    Ok(tree)
-}
+//     Ok(tree)
+// }
