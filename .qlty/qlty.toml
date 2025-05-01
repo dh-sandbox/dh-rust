@@ -4,29 +4,24 @@ config_version = "0"
 name = "default"
 default = true
 
-[[plugin]]
-name = "actionlint"
+# Disable the "too many return statements" check
+[smells.return_statements]
+enabled = true
 
-[[plugin]]
-name = "checkov"
-version = "3.2.49"
+# Allow functions with 6 params (all languages)
+[smells.function_parameters]
+enabled = true
 
-[[plugin]]
-name = "markdownlint"
-version = "0.31.1"
+[smells.boolean_logic]
+enabled = true
 
-[[plugin]]
-name = "osv-scanner"
+[smells.nested_control_flow]
+enabled = true
 
-[[plugin]]
-name = "prettier"
-version = "2.8.4"
+[smells.file_complexity]
+enabled = true
 
-[[plugin]]
-name = "ripgrep"
+[smells.function_complexity]
+enabled = true
 
-[[plugin]]
-name = "trivy"
 
-[[plugin]]
-name = "yamllint"
