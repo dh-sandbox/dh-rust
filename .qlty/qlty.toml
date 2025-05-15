@@ -24,4 +24,7 @@ enabled = true
 [smells.function_complexity]
 enabled = true
 
+[[plugin]]
+name = "radarlint-ruby"
+
 
