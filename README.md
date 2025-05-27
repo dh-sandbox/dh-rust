@@ -1,4 +1,4 @@
-[![Coverage](https://qlty.sh/badges/aff40cac-0a29-49a5-85bd-97a22947aa58/maintainability.png)](https://qlty.sh/gh/dh-sandbox/projects/dh-rust)
+[![Coverage](https://qlty.sh/badges/aff40cac-0a29-49a5-85bd-97a22947aa58/co.png)](https://qlty.sh/gh/dh-sandbox/projects/dh-rust)
 
 
 # Qlty Rust Coverage Example
