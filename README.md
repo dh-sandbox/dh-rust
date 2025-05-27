@@ -1,3 +1,5 @@
+[![Coverage](https://qlty.sh/badges/aff40cac-0a29-49a5-85bd-97a22947aa58/co.svg)](https://qlty.sh/gh/dh-sandbox/projects/dh-rust)
+
 # Qlty Rust Coverage Example
 
 [Qlty](https://example.com) is a Code Health Platform with support for code coverage.
