@@ -8,6 +8,7 @@ on:
 permissions:
   actions: write
   contents: read
+  id-token: write
 
 jobs:
   test:
@@ -35,7 +36,7 @@ jobs:
       - name: cargo test
         run: cargo llvm-cov --all-features --workspace --lcov --output-path target/lcov.info
 
-      - uses: qltysh/qlty-action/coverage@main
+      - uses: qltysh/qlty-action/coverage@v1
         with:
-          coverage-token: ${{ secrets.QLTY_COVERAGE_TOKEN }}
+          oidc: true
           files: target/lcov.info
