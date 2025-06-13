@@ -4,27 +4,5 @@ config_version = "0"
 name = "default"
 default = true
 
-# Disable the "too many return statements" check
-[smells.return_statements]
-enabled = true
-
-# Allow functions with 6 params (all languages)
-[smells.function_parameters]
-enabled = true
-
-[smells.boolean_logic]
-enabled = true
-
-[smells.nested_control_flow]
-enabled = true
-
-[smells.file_complexity]
-enabled = true
-
-[smells.function_complexity]
-enabled = true
-
-[[plugin]]
-name = "radarlint-ruby"
 
 
