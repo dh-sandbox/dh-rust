@@ -41,5 +41,5 @@ jobs:
           oidc: true
           files: target/lcov.info
           add-prefix: src
-          validate: true
+          validate: false
           
