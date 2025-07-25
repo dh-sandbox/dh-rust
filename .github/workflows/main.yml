@@ -36,10 +36,10 @@ jobs:
       - name: cargo test
         run: cargo llvm-cov --all-features --workspace --lcov --output-path target/lcov.info
 
-      - uses: qltysh/qlty-action/coverage@v1.1.1
+      - uses: qltysh/qlty-action/coverage@main
         with:
           oidc: true
           files: target/lcov.info
           add-prefix: src
-          validate: false
+          validate: true
           
