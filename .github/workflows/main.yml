@@ -39,4 +39,5 @@ jobs:
       - uses: qltysh/qlty-action/coverage@v1
         with:
           oidc: true
+          validate: true
           files: target/lcov.info
