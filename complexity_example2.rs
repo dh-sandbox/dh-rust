@@ -96,6 +96,7 @@ fn do_lots_of_stuff_again() {
     println!("All done.");
 }
 
+
 fn main() {
     do_lots_of_stuff();
 }
