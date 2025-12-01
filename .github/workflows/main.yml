@@ -41,4 +41,4 @@ jobs:
           oidc: true
           validate: false
           files: target/lcov.info
-          strip-prefix: /src/
+          add-prefix: test
