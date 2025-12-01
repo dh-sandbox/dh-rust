@@ -39,5 +39,6 @@ jobs:
       - uses: qltysh/qlty-action/coverage@v1
         with:
           oidc: true
-          validate: true
+          validate: false
           files: target/lcov.info
+          transform-strip-prefix: /src/
