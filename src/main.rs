@@ -1,4 +1,4 @@
-fn adds(a: i32, b: i32) -> i32 {
+fn add(a: i32, b: i32) -> i32 {
     a + b
 }
 
@@ -11,6 +11,14 @@ fn multiply(a: i32, b: i32) -> i32 {
 }
 
 fn main() {
+    println!("Hello, world!");
+
+    println!("3 + 2 = {}", add(3, 2));
+    println!("5 - 3 = {}", subtract(5, 3));
+    println!("4 * 3 = {}", multiply(4, 3));
+}
+
+fn mainer() {
     println!("Hello, world!");
 
     println!("3 + 2 = {}", add(3, 2));
