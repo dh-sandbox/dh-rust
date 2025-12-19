@@ -27,4 +27,25 @@ enabled = true
 [[plugin]]
 name = "radarlint-ruby"
 
+[[plugin]]
+name = "actionlint"
+
+
+[[plugin]]
+name = "osv-scanner"
+
+[[plugin]]
+name = "ripgrep"
+mode = "comment"
+
+[[plugin]]
+name = "trivy"
+drivers = [
+  "config",
+  "fs-vuln",
+]
+
+[[plugin]]
+name = "trufflehog"
+
 
