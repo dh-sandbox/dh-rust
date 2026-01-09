@@ -1,9 +1,10 @@
 name: Main
 on:
   push:
-  pull_request:
     branches:
-      - main    
+      - main
+  pull_request:
+
 
 permissions:
   actions: write
