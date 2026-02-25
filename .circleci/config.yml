@@ -1,0 +1,31 @@
+version: 2.1
+
+orbs:
+  qlty-orb: qltysh/qlty-orb@0.0
+
+jobs:
+  test:
+    docker:
+      - image: cimg/rust:1.75
+    steps:
+      - checkout
+
+      - run:
+          name: Install cargo-llvm-cov
+          command: cargo install cargo-llvm-cov
+
+      - run:
+          name: cargo build
+          command: cargo build --workspace --verbose
+
+      - run:
+          name: cargo test
+          command: cargo llvm-cov --all-features --workspace --lcov --output-path target/lcov.info
+
+      - qlty-orb/coverage_publish:
+          files: target/lcov.info
+
+workflows:
+  main:
+    jobs:
+      - test
