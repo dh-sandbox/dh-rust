@@ -6,7 +6,7 @@ orbs:
 jobs:
   test:
     docker:
-      - image: cimg/rust:1.75
+      - image: cimg/rust:1.87
     steps:
       - checkout
 
