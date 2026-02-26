@@ -1,6 +1,6 @@
 [![Code Coverage](https://qlty.sh/badges/aff40cac-0a29-49a5-85bd-97a22947aa58/test_coverage.svg)](https://qlty.sh/gh/dh-sandbox/projects/dh-rust)
 
-
+ 
 # Qlty Rust Coverage Example
 
 [Qlty](https://example.com) is a Code Health Platform with support for code coverage.
@@ -60,7 +60,7 @@ Join the our [Slack Community](https://example.com) for help and to provide feed
 
 
 
-
+ 
 
 
 
