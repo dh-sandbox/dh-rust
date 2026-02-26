@@ -9,21 +9,24 @@ jobs:
       - image: cimg/rust:1.87
     steps:
       - checkout
-
       - run:
           name: Install cargo-llvm-cov
           command: cargo install cargo-llvm-cov
-
       - run:
           name: cargo build
           command: cargo build --workspace --verbose
-
       - run:
           name: cargo test
           command: cargo llvm-cov --all-features --workspace --lcov --output-path target/lcov.info
-
       - qlty-orb/coverage_publish:
           files: target/lcov.info
+      - run:
+          name: Publish default branch coverage
+          command: |
+            if [ "$CIRCLE_BRANCH" = "main" ]; then
+              # Ensure the CLI is available if the orb doesn't handle global pathing
+              $HOME/.qlty/bin/qlty coverage publish --override-pr-number "" target/lcov.info
+            fi
 
 workflows:
   main:
