@@ -26,5 +26,6 @@ enabled = true
 
 [[plugin]]
 name = "ast-grep"
+mode = "block"
 
 
