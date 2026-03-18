@@ -4,3 +4,4 @@ rule:
   pattern: todo!($$$)
 message: Replace `todo!()` with an implementation or a tracked issue before merging.
 severity: warning
+note: todo!() panics at runtime. Implement the missing logic or file a tracking issue before merging.
