@@ -25,6 +25,19 @@ fn mainish() {
     println!("5 - 3 = {}", subtract(5, 3));
     println!("4 * 3 = {}", multiply(4, 3));
 }
+
+fn parse_number(input: &str) -> i32 {
+    input.parse::<i32>().unwrap()
+}
+
+fn divide(a: i32, b: i32) -> i32 {
+    if b == 0 {
+        todo!()
+    }
+    let result = a / b;
+    dbg!(result);
+    result
+}
 #[cfg(test)]
 mod tests {
     use super::*;

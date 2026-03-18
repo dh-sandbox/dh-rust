@@ -1,0 +1,6 @@
+id: no-todo-macro
+language: rust
+rule:
+  pattern: todo!($$$)
+message: Replace `todo!()` with an implementation or a tracked issue before merging.
+severity: warning

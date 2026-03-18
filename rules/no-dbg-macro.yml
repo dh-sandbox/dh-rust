@@ -1,0 +1,6 @@
+id: no-dbg-macro
+language: rust
+rule:
+  pattern: dbg!($$$)
+message: Remove `dbg!()` macro before committing — it's intended for local debugging only.
+severity: warning
