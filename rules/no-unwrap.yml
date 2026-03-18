@@ -1,0 +1,7 @@
+id: no-unwrap
+language: rust
+rule:
+  pattern: $EXPR.unwrap()
+message: Avoid using `.unwrap()` — prefer `.expect("reason")`, `?`, or proper error handling.
+severity: warning
+note: unwrap() causes a panic with no context on failure. Use expect() with a message or handle the error explicitly.
