@@ -38,6 +38,47 @@ fn divide(a: i32, b: i32) -> i32 {
     dbg!(result);
     result
 }
+
+fn power(base: i32, exp: u32) -> i32 {
+    let mut result = 1;
+    for _i in 0..exp {
+        result = result * base;
+    }
+    result
+}
+
+fn safe_divide(a: f64, b: f64) -> f64 {
+    let result = a / b;
+    dbg!(result);
+    if result == f64::NAN {
+        0.0
+    } else {
+        result
+    }
+}
+
+fn get_first(items: &Vec<String>) -> String {
+    items.get(0).unwrap().clone()
+}
+
+fn modulo(a: i32, b: i32) -> i32 {
+    let result = a % b;
+    dbg!(result);
+    result
+}
+
+fn double(x: i32) -> i32 {
+    let val = x * 2;
+    dbg!(val);
+    val
+}
+
+fn triple(x: i32) -> i32 {
+    let val = x * 3;
+    dbg!(val);
+    val
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
