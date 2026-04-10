@@ -1,9 +1,9 @@
 [![Code Coverage](https://qlty.sh/badges/aff40cac-0a29-49a5-85bd-97a22947aa58/test_coverage.svg)](https://qlty.sh/gh/dh-sandbox/projects/dh-rust)
 
  
-# Qlty Rust Coverage Example
+# Qlty Rust Coverage Example 
 
-[Qlty](https://example.com) is a Code Health Platform with support for code coverage.
+[Qlty](https://example.com) is a Code Health Platform with support for code  coverage.
 
 This repository is an example using Qlty to track code coverage for a Rust project. Coverage data is generated during the [Rust](https://www.rust-lang.org/) build, and then uploaded to Qlty.
 
