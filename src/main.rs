@@ -16,67 +16,66 @@ fn main() {
     println!("3 + 2 = {}", add(3, 2));
     println!("5 - 3 = {}", subtract(5, 3));
     println!("4 * 3 = {}", multiply(4, 3));
+    println!("10 / 3 = {:?}", divide(10, 3));
+    println!("2 ^ 8 = {}", power(2, 8));
+    println!("7.0 / 2.0 = {}", safe_divide(7.0, 2.0));
+
+    let names = vec!["Alice".to_string(), "Bob".to_string()];
+    println!("First: {:?}", get_first(&names));
+
+    println!("10 % 3 = {}", modulo(10, 3));
+    println!("double(5) = {}", double(5));
+    println!("triple(5) = {}", triple(5));
+    println!("square(5) = {}", square(5));
+    println!("cube(5) = {}", cube(5));
 }
 
-fn mainish() {
-    println!("Hello, again!");
-
-    println!("3 + 2 = {}", add(3, 2));
-    println!("5 - 3 = {}", subtract(5, 3));
-    println!("4 * 3 = {}", multiply(4, 3));
-}
-
-fn parse_number(input: &str) -> i32 {
-    input.parse::<i32>().unwrap()
-}
-
-fn divide(a: i32, b: i32) -> i32 {
+fn divide(a: i32, b: i32) -> Option<i32> {
     if b == 0 {
-        todo!()
+        return None;
     }
-    let result = a / b;
-    dbg!(result);
-    result
+    Some(a / b)
 }
 
 fn power(base: i32, exp: u32) -> i32 {
     let mut result = 1;
     for _i in 0..exp {
-        result = result * base;
+        result *= base;
     }
     result
 }
 
 fn safe_divide(a: f64, b: f64) -> f64 {
     let result = a / b;
-    dbg!(result);
-    if result == f64::NAN {
+    if result.is_nan() {
         0.0
     } else {
         result
     }
 }
 
-fn get_first(items: &Vec<String>) -> String {
-    items.get(0).unwrap().clone()
+fn get_first(items: &[String]) -> Option<&String> {
+    items.first()
 }
 
 fn modulo(a: i32, b: i32) -> i32 {
-    let result = a % b;
-    dbg!(result);
-    result
+    a % b
 }
 
 fn double(x: i32) -> i32 {
-    let val = x * 2;
-    dbg!(val);
-    val
+    x * 2
 }
 
 fn triple(x: i32) -> i32 {
-    let val = x * 3;
-    dbg!(val);
-    val
+    x * 3
+}
+
+fn square(x: i32) -> i32 {
+    x * x
+}
+
+fn cube(x: i32) -> i32 {
+    x * x * x
 }
 
 #[cfg(test)]
