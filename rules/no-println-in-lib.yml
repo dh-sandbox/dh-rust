@@ -1,0 +1,14 @@
+id: no-println-in-lib
+language: rust
+rule:
+  pattern: println!($$$)
+  inside:
+    kind: function_item
+    not:
+      has:
+        kind: identifier
+        regex: "^main$"
+    stopBy: end
+message: Prefer structured logging (e.g., `log` or `tracing` crate) over `println!` in non-main functions.
+severity: hint
+note: println! is fine in main() but library/helper functions should use proper logging.
