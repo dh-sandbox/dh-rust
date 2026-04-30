@@ -25,6 +25,7 @@ enabled = true
 enabled = true
 
 [[plugin]]
-name = "radarlint-ruby"
+name = "ast-grep"
+mode = "block"
 
 

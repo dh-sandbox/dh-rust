@@ -1,0 +1,7 @@
+id: no-dbg-macro
+language: rust
+rule:
+  pattern: dbg!($$$)
+message: Remove `dbg!()` macro before committing — it's intended for local debugging only.
+severity: warning
+note: dbg!() writes to stderr and should not be left in production code. Remove it or replace with proper logging.
