@@ -32,7 +32,7 @@ Join the our [Slack Community](https://example.com) for help and to provide feed
             
 ## License
 
-[MIT License](./LICENSE.md)
+[MIT License](./LICENSE.md) 
 
 
 
