@@ -28,4 +28,10 @@ enabled = true
 name = "ast-grep"
 mode = "block"
 
+[[plugin]]
+name = "clippy"
+
+[[plugin]]
+name = "rustfmt"
+
 
